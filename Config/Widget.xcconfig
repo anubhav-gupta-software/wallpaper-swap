@@ -1,0 +1,12 @@
+#include "Identifiers.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = $(WIDGET_BUNDLE_IDENTIFIER)
+CODE_SIGN_STYLE = Automatic
+
+// Free personal Apple ID. The widget still installs; it cannot see the
+// app's photos until you switch to the Paid file with a paid account.
+CODE_SIGN_ENTITLEMENTS = WallpaperSwapWidget/WallpaperSwapWidget-Free.entitlements
+
+// Paid Apple Developer Program. Comment the Free line and uncomment this,
+// and do the same for the app target in Config/App.xcconfig.
+// CODE_SIGN_ENTITLEMENTS = WallpaperSwapWidget/WallpaperSwapWidget-Paid.entitlements

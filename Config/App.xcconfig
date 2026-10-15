@@ -1,0 +1,15 @@
+#include "Identifiers.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = $(APP_BUNDLE_IDENTIFIER)
+CODE_SIGN_STYLE = Automatic
+
+// Free personal Apple ID. This file is empty of paid capabilities so Xcode
+// can install Wallpaper Swap on your iPhone.
+CODE_SIGN_ENTITLEMENTS = WallpaperSwap/WallpaperSwap-Free.entitlements
+
+// Paid Apple Developer Program. Comment the Free line and uncomment one:
+//   Paid    — App Group, so the Home Screen and Lock Screen widgets can
+//             show the photo the app received.
+//   iCloud  — App Group plus CloudKit, for the iCloud sync mode.
+// CODE_SIGN_ENTITLEMENTS = WallpaperSwap/WallpaperSwap-Paid.entitlements
+// CODE_SIGN_ENTITLEMENTS = WallpaperSwap/WallpaperSwap-iCloud.entitlements

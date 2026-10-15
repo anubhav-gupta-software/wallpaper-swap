@@ -1,0 +1,14 @@
+// Bundle ids and the optional iCloud / App Group identifiers.
+//
+// Change APP_BUNDLE_IDENTIFIER before you install if Xcode says the id is
+// already registered to your team. The widget id is derived from it.
+//
+// APP_GROUP_ID is substituted into the Paid entitlement files at code-sign
+// time, and into both Info.plists. A free Personal Team cannot sign those
+// files. Leave the Free entitlements selected in App.xcconfig and
+// Widget.xcconfig unless you have a paid Apple Developer Program membership.
+
+APP_BUNDLE_IDENTIFIER = app.wallpaperswap.ios
+WIDGET_BUNDLE_IDENTIFIER = $(APP_BUNDLE_IDENTIFIER).widget
+APP_GROUP_ID = group.app.wallpaperswap.shared
+CLOUDKIT_CONTAINER_ID = iCloud.app.wallpaperswap.ios
