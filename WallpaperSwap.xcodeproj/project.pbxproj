@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83A67B4F9DB88FFBF5CFC77A /* WallpaperSwapApp.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = AC846E45B2DF372ABFFE7457 /* WallpaperSwapApp.swift */;
+		};
+		FCDE7221E94A8C6674AD8D9A /* Theme.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = A607A9A123FB1F2A22CC6B8A /* Theme.swift */;
+		};
+		37924BFDD352035E6F9FDAA9 /* AppModel.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = A367B5E20694E36C043C3C0D /* AppModel.swift */;
+		};
+		5AB97508E10A3AFD3A8C04F0 /* LatestWallpaperIntent.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = EFC58E8B3604CC0C0C25E7DD /* LatestWallpaperIntent.swift */;
+		};
+		E7E826A7FB2FFCAEB2B3A814 /* CloudKitSyncTransport.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 962FFAF468004FB7998E81CE /* CloudKitSyncTransport.swift */;
+		};
+		65B059438F4CD22672871AD1 /* Haptics.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 85247AEFE9A57EB186828951 /* Haptics.swift */;
+		};
+		33D962E0D9577EC6A7B8C238 /* ImagePrep.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 08474872DF3579F285E65C3F /* ImagePrep.swift */;
+		};
+		F85B2920B36684962C90E8B5 /* LocalSyncTransport.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 4A5D76A063BEF90202031B64 /* LocalSyncTransport.swift */;
+		};
+		DD13E56E6AA97C47629445E7 /* NearbySyncTransport.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 70196B45A263E8EB2F45646B /* NearbySyncTransport.swift */;
+		};
+		95EEE62F73A265379DB88EA4 /* SampleWallpaper.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 31574733E7B4665123995F61 /* SampleWallpaper.swift */;
+		};
+		8476F22756A9BFA098D1B870 /* SyncTransport.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 89ACDEE7DFECD893B5A77969 /* SyncTransport.swift */;
+		};
+		94DA5F8A5B352E7124674514 /* WallpaperRenderer.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 3EA1ACF9C88A5A90F8004DBD /* WallpaperRenderer.swift */;
+		};
+		8432BD230AF5D1774CCEFAF2 /* CameraPicker.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = F56EFE46F880FE63343FD207 /* CameraPicker.swift */;
+		};
+		26C9FF8A824E66913B72CC50 /* Components.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = A1FDD7353B2B72BE9D5A4105 /* Components.swift */;
+		};
+		1C0C7CE9DBFD9263FF0B13EA /* CropView.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = E13118CCB2C5547754AD7018 /* CropView.swift */;
+		};
+		D30B6A32F332835B9653A44F /* GuideView.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 078A0BEFC3E26E82BA493F81 /* GuideView.swift */;
+		};
+		0D1FEFD66189E93B818D2447 /* HistoryView.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = BCA324D65FA2E4754BE9B562 /* HistoryView.swift */;
+		};
+		8902C54B6BEF0D1C39B9EE61 /* HomeView.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 98E25355F77A069DE3704208 /* HomeView.swift */;
+		};
+		E3B87602494E96BBC7F344CB /* OnboardingView.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 8602F2A66654CA84E2842242 /* OnboardingView.swift */;
+		};
+		9CD413E679F90C5FC1D4FAEC /* PairView.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = D49CC62A2E9B63F6C3469897 /* PairView.swift */;
+		};
+		C9D66A9ED7353BC1DAB06B67 /* RootView.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = BCAFC8375122314F5360C204 /* RootView.swift */;
+		};
+		A4513570322DF1D897D9D220 /* SettingsView.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = D977854FDA4496C99FE73382 /* SettingsView.swift */;
+		};
+		10953CD8BA3CE7DF7714831F /* AppGroup.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = E9701443E0FE36D5DC678DE3 /* AppGroup.swift */;
+		};
+		DBA3B228CD5123A3D434EEDC /* JSONCoding.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 1AA352E7B3771DB5F628120B /* JSONCoding.swift */;
+		};
+		7AF0037262F6A52033CA926D /* Models.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = A08D946DA3452D18914C94D8 /* Models.swift */;
+		};
+		3198EA507B7B9762B51013E3 /* WallpaperStore.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = AA316789A39918BBC9EB15D2 /* WallpaperStore.swift */;
+		};
+		DB6A3675F8F4512F14777CB9 /* FriendPhotoWidget.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 233EDA736DBA199A93FA9A70 /* FriendPhotoWidget.swift */;
+		};
+		D5F2882B5865A00C5E8D33FA /* AppGroup.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = E9701443E0FE36D5DC678DE3 /* AppGroup.swift */;
+		};
+		6DC4001DCAE58231C71D46E6 /* JSONCoding.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = 1AA352E7B3771DB5F628120B /* JSONCoding.swift */;
+		};
+		9799568EE7C1ECCA3E6F6731 /* Models.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = A08D946DA3452D18914C94D8 /* Models.swift */;
+		};
+		A620E07F9211762487D7F4FD /* WallpaperStore.swift in Sources */ = {
+			isa = PBXBuildFile;
+			fileRef = AA316789A39918BBC9EB15D2 /* WallpaperStore.swift */;
+		};
+		16E135A91FF951E1CC7CB41F /* Assets.xcassets in Resources */ = {
+			isa = PBXBuildFile;
+			fileRef = 4A157156B650048851AC58C8 /* Assets.xcassets */;
+		};
+		886F62A0B305DB6D9CD20A55 /* PrivacyInfo.xcprivacy in Resources */ = {
+			isa = PBXBuildFile;
+			fileRef = B9383A46B990DB84295E321E /* PrivacyInfo.xcprivacy */;
+		};
+		6052043149A45F5F92243A40 /* PrivacyInfo.xcprivacy in Resources */ = {
+			isa = PBXBuildFile;
+			fileRef = F538CCADB384EF53CE887F4A /* PrivacyInfo.xcprivacy */;
+		};
+		5457AB9FB521F7F7EF0268A3 /* WallpaperSwapWidget.appex in Embed Foundation Extensions */ = {
+			isa = PBXBuildFile;
+			fileRef = 4C47665D1BA4105DF9684DC4 /* WallpaperSwapWidget.appex */;
+			settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); };
+		};
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DD22CB6C2E8E29B0AF6C12D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5A0AA9F4FB5BC8D9254438A;
+			remoteInfo = WallpaperSwapWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		354DE1AFDDAA7FBB961D5290 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5457AB9FB521F7F7EF0268A3 /* build */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC846E45B2DF372ABFFE7457 /* WallpaperSwapApp.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = WallpaperSwapApp.swift;
+			sourceTree = "<group>";
+		};
+		A607A9A123FB1F2A22CC6B8A /* Theme.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = Theme.swift;
+			sourceTree = "<group>";
+		};
+		A367B5E20694E36C043C3C0D /* AppModel.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = AppModel.swift;
+			sourceTree = "<group>";
+		};
+		EFC58E8B3604CC0C0C25E7DD /* LatestWallpaperIntent.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = LatestWallpaperIntent.swift;
+			sourceTree = "<group>";
+		};
+		962FFAF468004FB7998E81CE /* CloudKitSyncTransport.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = CloudKitSyncTransport.swift;
+			sourceTree = "<group>";
+		};
+		85247AEFE9A57EB186828951 /* Haptics.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = Haptics.swift;
+			sourceTree = "<group>";
+		};
+		08474872DF3579F285E65C3F /* ImagePrep.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = ImagePrep.swift;
+			sourceTree = "<group>";
+		};
+		4A5D76A063BEF90202031B64 /* LocalSyncTransport.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = LocalSyncTransport.swift;
+			sourceTree = "<group>";
+		};
+		70196B45A263E8EB2F45646B /* NearbySyncTransport.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = NearbySyncTransport.swift;
+			sourceTree = "<group>";
+		};
+		31574733E7B4665123995F61 /* SampleWallpaper.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = SampleWallpaper.swift;
+			sourceTree = "<group>";
+		};
+		89ACDEE7DFECD893B5A77969 /* SyncTransport.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = SyncTransport.swift;
+			sourceTree = "<group>";
+		};
+		3EA1ACF9C88A5A90F8004DBD /* WallpaperRenderer.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = WallpaperRenderer.swift;
+			sourceTree = "<group>";
+		};
+		F56EFE46F880FE63343FD207 /* CameraPicker.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = CameraPicker.swift;
+			sourceTree = "<group>";
+		};
+		A1FDD7353B2B72BE9D5A4105 /* Components.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = Components.swift;
+			sourceTree = "<group>";
+		};
+		E13118CCB2C5547754AD7018 /* CropView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = CropView.swift;
+			sourceTree = "<group>";
+		};
+		078A0BEFC3E26E82BA493F81 /* GuideView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = GuideView.swift;
+			sourceTree = "<group>";
+		};
+		BCA324D65FA2E4754BE9B562 /* HistoryView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = HistoryView.swift;
+			sourceTree = "<group>";
+		};
+		98E25355F77A069DE3704208 /* HomeView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = HomeView.swift;
+			sourceTree = "<group>";
+		};
+		8602F2A66654CA84E2842242 /* OnboardingView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = OnboardingView.swift;
+			sourceTree = "<group>";
+		};
+		D49CC62A2E9B63F6C3469897 /* PairView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = PairView.swift;
+			sourceTree = "<group>";
+		};
+		BCAFC8375122314F5360C204 /* RootView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = RootView.swift;
+			sourceTree = "<group>";
+		};
+		D977854FDA4496C99FE73382 /* SettingsView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = SettingsView.swift;
+			sourceTree = "<group>";
+		};
+		E9701443E0FE36D5DC678DE3 /* AppGroup.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = AppGroup.swift;
+			sourceTree = "<group>";
+		};
+		1AA352E7B3771DB5F628120B /* JSONCoding.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = JSONCoding.swift;
+			sourceTree = "<group>";
+		};
+		A08D946DA3452D18914C94D8 /* Models.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = Models.swift;
+			sourceTree = "<group>";
+		};
+		AA316789A39918BBC9EB15D2 /* WallpaperStore.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = WallpaperStore.swift;
+			sourceTree = "<group>";
+		};
+		233EDA736DBA199A93FA9A70 /* FriendPhotoWidget.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = FriendPhotoWidget.swift;
+			sourceTree = "<group>";
+		};
+		4A157156B650048851AC58C8 /* Assets.xcassets */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = folder.assetcatalog;
+			path = Assets.xcassets;
+			sourceTree = "<group>";
+		};
+		B9383A46B990DB84295E321E /* PrivacyInfo.xcprivacy */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			path = PrivacyInfo.xcprivacy;
+			sourceTree = "<group>";
+		};
+		F538CCADB384EF53CE887F4A /* PrivacyInfo.xcprivacy */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			path = PrivacyInfo.xcprivacy;
+			sourceTree = "<group>";
+		};
+		572906919E0D8DC201122ADB /* Info.plist */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		850C752B71CEFCD47C849F84 /* WallpaperSwap-Free.entitlements */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = WallpaperSwap-Free.entitlements;
+			sourceTree = "<group>";
+		};
+		25F8AE104B8FD1D19CA104F2 /* WallpaperSwap-Paid.entitlements */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = WallpaperSwap-Paid.entitlements;
+			sourceTree = "<group>";
+		};
+		BC25242C153659D0424C2811 /* WallpaperSwap-iCloud.entitlements */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = WallpaperSwap-iCloud.entitlements;
+			sourceTree = "<group>";
+		};
+		653F1BFBEF9C2BD944CF2757 /* Info.plist */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		042DD15D58CA521D0C08CABB /* WallpaperSwapWidget-Free.entitlements */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = WallpaperSwapWidget-Free.entitlements;
+			sourceTree = "<group>";
+		};
+		FEA5983206AA19004EFA7C8D /* WallpaperSwapWidget-Paid.entitlements */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = WallpaperSwapWidget-Paid.entitlements;
+			sourceTree = "<group>";
+		};
+		DD0D6B7AEB38028D62BB26A5 /* Identifiers.xcconfig */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xcconfig;
+			path = Identifiers.xcconfig;
+			sourceTree = "<group>";
+		};
+		7BBD5269689342F4AC5A856E /* App.xcconfig */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xcconfig;
+			path = App.xcconfig;
+			sourceTree = "<group>";
+		};
+		F443D2E2C478EFF9009D0F74 /* Widget.xcconfig */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xcconfig;
+			path = Widget.xcconfig;
+			sourceTree = "<group>";
+		};
+		B6CDB6E5D160E013280D3C68 /* WallpaperSwap.app */ = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = WallpaperSwap.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C47665D1BA4105DF9684DC4 /* WallpaperSwapWidget.appex */ = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.app-extension";
+			includeInIndex = 0;
+			path = WallpaperSwapWidget.appex;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F001BC2AF9EB5498B3360756 /* PBXFrameworksBuildPhase */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86C06E737A2123D76E2FABB /* PBXFrameworksBuildPhase */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34C8A5319391C7E8BF5D3904 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A367B5E20694E36C043C3C0D /* AppModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A31D3374946AEC6B0D3886C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				962FFAF468004FB7998E81CE /* CloudKitSyncTransport.swift */,
+				85247AEFE9A57EB186828951 /* Haptics.swift */,
+				08474872DF3579F285E65C3F /* ImagePrep.swift */,
+				4A5D76A063BEF90202031B64 /* LocalSyncTransport.swift */,
+				70196B45A263E8EB2F45646B /* NearbySyncTransport.swift */,
+				31574733E7B4665123995F61 /* SampleWallpaper.swift */,
+				89ACDEE7DFECD893B5A77969 /* SyncTransport.swift */,
+				3EA1ACF9C88A5A90F8004DBD /* WallpaperRenderer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7EFEE443E878286B9201B84F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F56EFE46F880FE63343FD207 /* CameraPicker.swift */,
+				A1FDD7353B2B72BE9D5A4105 /* Components.swift */,
+				E13118CCB2C5547754AD7018 /* CropView.swift */,
+				078A0BEFC3E26E82BA493F81 /* GuideView.swift */,
+				BCA324D65FA2E4754BE9B562 /* HistoryView.swift */,
+				98E25355F77A069DE3704208 /* HomeView.swift */,
+				8602F2A66654CA84E2842242 /* OnboardingView.swift */,
+				D49CC62A2E9B63F6C3469897 /* PairView.swift */,
+				BCAFC8375122314F5360C204 /* RootView.swift */,
+				D977854FDA4496C99FE73382 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D56056FF7581DE163C5580AB /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				EFC58E8B3604CC0C0C25E7DD /* LatestWallpaperIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		CF8D0BD4B75E8C2C174692A5 /* WallpaperSwap */ = {
+			isa = PBXGroup;
+			children = (
+				34C8A5319391C7E8BF5D3904 /* Model */,
+				A31D3374946AEC6B0D3886C2 /* Services */,
+				7EFEE443E878286B9201B84F /* Views */,
+				D56056FF7581DE163C5580AB /* Intents */,
+				4A157156B650048851AC58C8 /* Assets.xcassets */,
+				572906919E0D8DC201122ADB /* Info.plist */,
+				B9383A46B990DB84295E321E /* PrivacyInfo.xcprivacy */,
+				A607A9A123FB1F2A22CC6B8A /* Theme.swift */,
+				AC846E45B2DF372ABFFE7457 /* WallpaperSwapApp.swift */,
+				850C752B71CEFCD47C849F84 /* WallpaperSwap-Free.entitlements */,
+				25F8AE104B8FD1D19CA104F2 /* WallpaperSwap-Paid.entitlements */,
+				BC25242C153659D0424C2811 /* WallpaperSwap-iCloud.entitlements */,
+			);
+			path = WallpaperSwap;
+			sourceTree = "<group>";
+		};
+		D45CB4A487390B4D06F7B760 /* WallpaperSwapWidget */ = {
+			isa = PBXGroup;
+			children = (
+				233EDA736DBA199A93FA9A70 /* FriendPhotoWidget.swift */,
+				653F1BFBEF9C2BD944CF2757 /* Info.plist */,
+				F538CCADB384EF53CE887F4A /* PrivacyInfo.xcprivacy */,
+				042DD15D58CA521D0C08CABB /* WallpaperSwapWidget-Free.entitlements */,
+				FEA5983206AA19004EFA7C8D /* WallpaperSwapWidget-Paid.entitlements */,
+			);
+			path = WallpaperSwapWidget;
+			sourceTree = "<group>";
+		};
+		7A6860A1A04070265E6C4DE6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E9701443E0FE36D5DC678DE3 /* AppGroup.swift */,
+				1AA352E7B3771DB5F628120B /* JSONCoding.swift */,
+				A08D946DA3452D18914C94D8 /* Models.swift */,
+				AA316789A39918BBC9EB15D2 /* WallpaperStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D35BDCF6803CCB1A9C4483A8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DD0D6B7AEB38028D62BB26A5 /* Identifiers.xcconfig */,
+				7BBD5269689342F4AC5A856E /* App.xcconfig */,
+				F443D2E2C478EFF9009D0F74 /* Widget.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		00C45FD35CB0F9C5F764F070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6CDB6E5D160E013280D3C68 /* WallpaperSwap.app */,
+				4C47665D1BA4105DF9684DC4 /* WallpaperSwapWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF891E785808226D241F246E /* WallpaperSwap */ = {
+			isa = PBXGroup;
+			children = (
+				D35BDCF6803CCB1A9C4483A8 /* Config */,
+				7A6860A1A04070265E6C4DE6 /* Shared */,
+				CF8D0BD4B75E8C2C174692A5 /* WallpaperSwap */,
+				D45CB4A487390B4D06F7B760 /* WallpaperSwapWidget */,
+				00C45FD35CB0F9C5F764F070 /* Products */,
+			);
+			name = WallpaperSwap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29C7B681C8D62CBAC94D51C0 /* WallpaperSwap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23746EFE221170E24101FE05 /* Build configuration list for PBXNativeTarget "WallpaperSwap" */;
+			buildPhases = (
+				8682261519D15BD64A9E5D31 /* Sources */,
+				F001BC2AF9EB5498B3360756 /* Frameworks */,
+				E28FAD8F60ECDED9B4AD087A /* Resources */,
+				354DE1AFDDAA7FBB961D5290 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4A9F4575995553F848634DB /* PBXTargetDependency */,
+			);
+			name = WallpaperSwap;
+			productName = WallpaperSwap;
+			productReference = B6CDB6E5D160E013280D3C68 /* WallpaperSwap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5A0AA9F4FB5BC8D9254438A /* WallpaperSwapWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3830FEBA1CBED008B7D01379 /* Build configuration list for PBXNativeTarget "WallpaperSwapWidget" */;
+			buildPhases = (
+				85B53C7A615CCE39E04693F3 /* Sources */,
+				C86C06E737A2123D76E2FABB /* Frameworks */,
+				A0AD9CEC41780F670929E69C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallpaperSwapWidget;
+			productName = WallpaperSwapWidget;
+			productReference = 4C47665D1BA4105DF9684DC4 /* WallpaperSwapWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					29C7B681C8D62CBAC94D51C0 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A5A0AA9F4FB5BC8D9254438A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 3D29D9F3A882C4202964FB56 /* Build configuration list for PBXProject "WallpaperSwap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF891E785808226D241F246E /* WallpaperSwap */;
+			productRefGroup = 00C45FD35CB0F9C5F764F070 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29C7B681C8D62CBAC94D51C0 /* WallpaperSwap */,
+				A5A0AA9F4FB5BC8D9254438A /* WallpaperSwapWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E28FAD8F60ECDED9B4AD087A /* PBXResourcesBuildPhase */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16E135A91FF951E1CC7CB41F /* build */,
+				886F62A0B305DB6D9CD20A55 /* build */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0AD9CEC41780F670929E69C /* PBXResourcesBuildPhase */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6052043149A45F5F92243A40 /* build */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8682261519D15BD64A9E5D31 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A67B4F9DB88FFBF5CFC77A /* build */,
+				FCDE7221E94A8C6674AD8D9A /* build */,
+				37924BFDD352035E6F9FDAA9 /* build */,
+				5AB97508E10A3AFD3A8C04F0 /* build */,
+				E7E826A7FB2FFCAEB2B3A814 /* build */,
+				65B059438F4CD22672871AD1 /* build */,
+				33D962E0D9577EC6A7B8C238 /* build */,
+				F85B2920B36684962C90E8B5 /* build */,
+				DD13E56E6AA97C47629445E7 /* build */,
+				95EEE62F73A265379DB88EA4 /* build */,
+				8476F22756A9BFA098D1B870 /* build */,
+				94DA5F8A5B352E7124674514 /* build */,
+				8432BD230AF5D1774CCEFAF2 /* build */,
+				26C9FF8A824E66913B72CC50 /* build */,
+				1C0C7CE9DBFD9263FF0B13EA /* build */,
+				D30B6A32F332835B9653A44F /* build */,
+				0D1FEFD66189E93B818D2447 /* build */,
+				8902C54B6BEF0D1C39B9EE61 /* build */,
+				E3B87602494E96BBC7F344CB /* build */,
+				9CD413E679F90C5FC1D4FAEC /* build */,
+				C9D66A9ED7353BC1DAB06B67 /* build */,
+				A4513570322DF1D897D9D220 /* build */,
+				10953CD8BA3CE7DF7714831F /* build */,
+				DBA3B228CD5123A3D434EEDC /* build */,
+				7AF0037262F6A52033CA926D /* build */,
+				3198EA507B7B9762B51013E3 /* build */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85B53C7A615CCE39E04693F3 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6A3675F8F4512F14777CB9 /* build */,
+				D5F2882B5865A00C5E8D33FA /* build */,
+				6DC4001DCAE58231C71D46E6 /* build */,
+				9799568EE7C1ECCA3E6F6731 /* build */,
+				A620E07F9211762487D7F4FD /* build */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4A9F4575995553F848634DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5A0AA9F4FB5BC8D9254438A /* WallpaperSwapWidget */;
+			targetProxy = 0DD22CB6C2E8E29B0AF6C12D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E3EBCBBFB33611052F1F254E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_ENABLE_OBJC_WEAK = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CLANG_WARN_UNREACHABLE_CODE = YES;
+			CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+			COPY_PHASE_STRIP = NO;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			ENABLE_USER_SCRIPT_SANDBOXING = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_NO_COMMON_BLOCKS = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			SDKROOT = iphoneos;
+			SWIFT_STRICT_CONCURRENCY = minimal;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = 1;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_TESTABILITY = YES;
+			GCC_DYNAMIC_NO_PIC = NO;
+			GCC_OPTIMIZATION_LEVEL = 0;
+			GCC_PREPROCESSOR_DEFINITIONS = (
+				DEBUG=1,
+				$(inherited),
+			);
+			MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+			ONLY_ACTIVE_ARCH = YES;
+			SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45A51FDE45C8C9313F9CC216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_NONNULL = YES;
+			CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_ENABLE_OBJC_WEAK = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CLANG_WARN_UNREACHABLE_CODE = YES;
+			CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+			COPY_PHASE_STRIP = NO;
+			ENABLE_STRICT_OBJC_MSGSEND = YES;
+			ENABLE_USER_SCRIPT_SANDBOXING = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_NO_COMMON_BLOCKS = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			SDKROOT = iphoneos;
+			SWIFT_STRICT_CONCURRENCY = minimal;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = 1;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_NS_ASSERTIONS = NO;
+			MTL_ENABLE_DEBUG_INFO = NO;
+			SWIFT_COMPILATION_MODE = wholemodule;
+			SWIFT_OPTIMIZATION_LEVEL = "-O";
+			VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		754064D2901B6752E802BA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBD5269689342F4AC5A856E /* App.xcconfig */;
+			buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_FILE = WallpaperSwap/Info.plist;
+			INFOPLIST_KEY_AppGroupIdentifier = $(APP_GROUP_ID);
+			INFOPLIST_KEY_CFBundleDisplayName = "Wallpaper Swap";
+			INFOPLIST_KEY_CloudKitContainerIdentifier = $(CLOUDKIT_CONTAINER_ID);
+			INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+			INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+			LD_RUNPATH_SEARCH_PATHS = (
+				$(inherited),
+				@executable_path/Frameworks,
+			);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_NAME = $(TARGET_NAME);
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			SUPPORTS_MACCATALYST = NO;
+			SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+			SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		831F0B0E7AD0243B76867D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBD5269689342F4AC5A856E /* App.xcconfig */;
+			buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_FILE = WallpaperSwap/Info.plist;
+			INFOPLIST_KEY_AppGroupIdentifier = $(APP_GROUP_ID);
+			INFOPLIST_KEY_CFBundleDisplayName = "Wallpaper Swap";
+			INFOPLIST_KEY_CloudKitContainerIdentifier = $(CLOUDKIT_CONTAINER_ID);
+			INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+			INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+			LD_RUNPATH_SEARCH_PATHS = (
+				$(inherited),
+				@executable_path/Frameworks,
+			);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_NAME = $(TARGET_NAME);
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			SUPPORTS_MACCATALYST = NO;
+			SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+			SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B41A98AF27198927E7D6E695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F443D2E2C478EFF9009D0F74 /* Widget.xcconfig */;
+			buildSettings = {
+			APPLICATION_EXTENSION_API_ONLY = YES;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_FILE = WallpaperSwapWidget/Info.plist;
+			INFOPLIST_KEY_AppGroupIdentifier = $(APP_GROUP_ID);
+			INFOPLIST_KEY_CFBundleDisplayName = "Wallpaper Swap";
+			LD_RUNPATH_SEARCH_PATHS = (
+				$(inherited),
+				@executable_path/Frameworks,
+				@executable_path/../../Frameworks,
+			);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_NAME = $(TARGET_NAME);
+			SKIP_INSTALL = YES;
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			SUPPORTS_MACCATALYST = NO;
+			SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+			SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F98F082DAF35016006E80716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F443D2E2C478EFF9009D0F74 /* Widget.xcconfig */;
+			buildSettings = {
+			APPLICATION_EXTENSION_API_ONLY = YES;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_FILE = WallpaperSwapWidget/Info.plist;
+			INFOPLIST_KEY_AppGroupIdentifier = $(APP_GROUP_ID);
+			INFOPLIST_KEY_CFBundleDisplayName = "Wallpaper Swap";
+			LD_RUNPATH_SEARCH_PATHS = (
+				$(inherited),
+				@executable_path/Frameworks,
+				@executable_path/../../Frameworks,
+			);
+			MARKETING_VERSION = 1.0;
+			PRODUCT_NAME = $(TARGET_NAME);
+			SKIP_INSTALL = YES;
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			SUPPORTS_MACCATALYST = NO;
+			SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+			SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D29D9F3A882C4202964FB56 /* Build configuration list for PBXProject "WallpaperSwap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3EBCBBFB33611052F1F254E /* Debug */,
+				45A51FDE45C8C9313F9CC216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23746EFE221170E24101FE05 /* Build configuration list for PBXNativeTarget "WallpaperSwap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754064D2901B6752E802BA06 /* Debug */,
+				831F0B0E7AD0243B76867D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3830FEBA1CBED008B7D01379 /* Build configuration list for PBXNativeTarget "WallpaperSwapWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41A98AF27198927E7D6E695 /* Debug */,
+				F98F082DAF35016006E80716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}
