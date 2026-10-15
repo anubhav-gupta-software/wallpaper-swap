@@ -184,5 +184,6 @@ private struct HistoryDetail: View {
         }
         .preferredColorScheme(.dark)
         .tint(Ink.accent)
+        .modelErrorAlert()
     }
 }
