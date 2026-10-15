@@ -3,8 +3,23 @@
 //  WallpaperSwap
 //
 
+import CoreTransferable
 import ImageIO
+import UniformTypeIdentifiers
 import UIKit
+
+struct PickedPhoto: Transferable {
+    let image: UIImage
+
+    static var transferRepresentation: some TransferRepresentation {
+        DataRepresentation(importedContentType: .image) { data in
+            guard let image = ImagePrep.prepare(data: data) else {
+                throw SyncFailure("Couldn't open that photo.")
+            }
+            return PickedPhoto(image: image)
+        }
+    }
+}
 
 enum ImagePrep {
     /// Decode a library or camera photo upright, and cap the long edge so the

@@ -115,7 +115,7 @@ final class NearbySyncTransport: NSObject, SyncTransport {
         }
         let snapshot: (session: MCSession, peer: MCPeerID)? = await MainActor.run {
             guard let session = self.session, let peer = session.connectedPeers.first else { return nil }
-            return (session, peer)
+            return (session: session, peer: peer)
         }
         guard let snapshot else {
             throw SyncFailure("\(pairing.displayName) isn't connected. Keep both apps open and try again.")
