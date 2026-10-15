@@ -30,7 +30,6 @@ final class CloudKitSyncTransport: SyncTransport {
         let record = CKRecord(recordType: roomType, recordID: CKRecord.ID(recordName: code))
         record.setObject(code as NSString, forKey: "code")
         record.setObject(Self.clean(myName) as NSString, forKey: "hostName")
-        record.setObject("" as NSString, forKey: "guestName")
         record.setObject(Date() as NSDate, forKey: "createdAt")
         do {
             _ = try await database.save(record)
@@ -55,9 +54,20 @@ final class CloudKitSyncTransport: SyncTransport {
         }
         let host = (record["hostName"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         let hostName = host.isEmpty ? "Your friend" : host
-        record.setObject(Self.clean(myName) as NSString, forKey: "guestName")
+        // The guest writes their own record. They can't edit the host's Room,
+        // and fetching this by record name needs no query index.
+        let guestID = CKRecord.ID(recordName: "\(normalized)-guest")
         do {
-            _ = try await database.save(record)
+            _ = try await database.record(for: guestID)
+        } catch let error as CKError where error.code == .unknownItem {
+            let guestRecord = CKRecord(recordType: "Guest", recordID: guestID)
+            guestRecord.setObject(Self.clean(myName) as NSString, forKey: "guestName")
+            guestRecord.setObject(normalized as NSString, forKey: "room")
+            do {
+                _ = try await database.save(guestRecord)
+            } catch {
+                throw SyncFailure(Self.describe(error))
+            }
         } catch {
             throw SyncFailure(Self.describe(error))
         }
@@ -96,7 +106,7 @@ final class CloudKitSyncTransport: SyncTransport {
         let database = try await database()
         var result = RefreshResult()
         if pairing.role == .host, !pairing.isConfirmed {
-            if let record = try? await database.record(for: CKRecord.ID(recordName: pairing.code)),
+            if let record = try? await database.record(for: CKRecord.ID(recordName: "\(pairing.code)-guest")),
                let guest = record["guestName"] as? String,
                !guest.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                 var updated = pairing
