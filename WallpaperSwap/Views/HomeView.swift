@@ -145,12 +145,14 @@ struct HomeView: View {
                 .buttonStyle(FillButtonStyle())
             }
 
-            Button("Try a sample photo") {
-                model.useSample()
+            if model.currentImage == nil {
+                Button("Try a sample photo") {
+                    model.useSample()
+                }
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(Ink.gold)
+                .frame(minHeight: 36)
             }
-            .font(.subheadline.weight(.semibold))
-            .foregroundStyle(Ink.gold)
-            .frame(minHeight: 36)
 
             if model.currentImage != nil {
                 Button("How to set the real wallpaper") {

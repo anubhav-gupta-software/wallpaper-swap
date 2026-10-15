@@ -155,9 +155,9 @@ struct CropView: View {
     }
 
     private func magnify(in crop: CGSize) -> some Gesture {
-        MagnificationGesture()
+        MagnifyGesture()
             .onChanged { value in
-                let next = min(max(startScale * value, 1), 5)
+                let next = min(max(startScale * value.magnification, 1), 5)
                 scale = next
                 offset = CropGeometry.clampedOffset(
                     offset: offset,
